@@ -1,319 +1,323 @@
-// --- Quiz Data Structure (Unchanged) ---
+// --- Quiz Data Structure: DAY 3 MCQs ---
 const quizQuestions = [
-    // PATHOLOGY MCQs (1-25)
+    // CHILD HEALTH NURSING (1–10)
     {
-        question: "1. Inflammation is a ______.",
-        options: ["a) Disease", "b) Body’s protective response", "c) Drug effect", "d) Hormonal change"],
-        answer: "b) Body’s protective response",
-        section: "Pathology"
+        question: "1. Child is NOT a small adult because ______.",
+        options: ["a) Body systems are immature", "b) They grow fast", "c) They cry more", "d) They need toys"],
+        answer: "a) Body systems are immature",
+        section: "Child Health Nursing"
     },
     {
-        question: "2. A classic sign of inflammation is ______.",
-        options: ["a) Cyanosis", "b) Redness", "c) Paralysis", "d) Vomiting"],
-        answer: "b) Redness",
-        section: "Pathology"
+        question: "2. Family-centered care means ______.",
+        options: ["a) Ignoring the family", "b) Including family in care", "c) Asking only mother", "d) Allowing family to treat child"],
+        answer: "b) Including family in care",
+        section: "Child Health Nursing"
     },
     {
-        question: "3. Which of the following is NOT a sign of inflammation?",
-        options: ["a) Pain", "b) Swelling", "c) Heat", "d) Constipation"],
-        answer: "d) Constipation",
-        section: "Pathology"
+        question: "3. Best indicator of child health is ______.",
+        options: ["a) Weight", "b) Birth order", "c) Immunization", "d) Growth & development"],
+        answer: "d) Growth & development",
+        section: "Child Health Nursing"
     },
     {
-        question: "4. “Loss of function” occurs in ______.",
-        options: ["a) Obesity", "b) Inflammation", "c) Anemia", "d) Fracture"],
-        answer: "b) Inflammation",
-        section: "Pathology"
+        question: "4. Most common childhood infection in India is ______.",
+        options: ["a) Cancer", "b) Respiratory infection", "c) Paralysis", "d) Diabetes"],
+        answer: "b) Respiratory infection",
+        section: "Child Health Nursing"
     },
     {
-        question: "5. Infection is caused by ______.",
-        options: ["a) Mental stress", "b) Microorganisms", "c) Exercise", "d) Hormones"],
-        answer: "b) Microorganisms",
-        section: "Pathology"
+        question: "5. Best indicator of malnutrition is ______.",
+        options: ["a) Height", "b) Weight-for-age", "c) BMI", "d) Appetite"],
+        answer: "b) Weight-for-age",
+        section: "Child Health Nursing"
     },
     {
-        question: "6. All infections lead to inflammation, but ______.",
-        options: ["a) All inflammation also leads to infection", "b) Some inflammation occurs without infection", "c) Infection and inflammation are same", "d) None"],
-        answer: "b) Some inflammation occurs without infection",
-        section: "Pathology"
+        question: "6. Exclusive breastfeeding is recommended for ______.",
+        options: ["a) 0–3 months", "b) 0–4 months", "c) 0–6 months", "d) 0–12 months"],
+        answer: "c) 0–6 months",
+        section: "Child Health Nursing"
     },
     {
-        question: "7. Natural immunity is ______.",
-        options: ["a) Inherited at birth", "b) Gained after vaccination", "c) Artificial only", "d) Temporary"],
-        answer: "a) Inherited at birth",
-        section: "Pathology"
+        question: "7. Colostrum is ______.",
+        options: ["a) Not useful", "b) First milk rich in antibodies", "c) Watery milk", "d) Artificial milk"],
+        answer: "b) First milk rich in antibodies",
+        section: "Child Health Nursing"
     },
     {
-        question: "8. Passive immunity is ______.",
-        options: ["a) Long lasting", "b) Short term", "c) Artificial only", "d) Not useful"],
-        answer: "b) Short term",
-        section: "Pathology"
+        question: "8. Common cause of diarrhea in children is ______.",
+        options: ["a) Virus", "b) Iron", "c) Overeating", "d) Worms"],
+        answer: "a) Virus",
+        section: "Child Health Nursing"
     },
     {
-        question: "9. Maternal antibodies to baby are example of ______.",
-        options: ["a) Natural active", "b) Natural passive", "c) Artificial active", "d) Artificial passive"],
-        answer: "b) Natural passive",
-        section: "Pathology"
+        question: "9. Treatment of childhood diarrhea includes ______.",
+        options: ["a) Stop feeding", "b) ORS + Zinc", "c) Antibiotics always", "d) IV fluids only"],
+        answer: "b) ORS + Zinc",
+        section: "Child Health Nursing"
     },
     {
-        question: "10. Vaccination provides ______ immunity.",
-        options: ["a) Natural passive", "b) Artificial active", "c) Natural active", "d) Artificial passive"],
-        answer: "b) Artificial active",
-        section: "Pathology"
-    },
-    {
-        question: "11. Immunoglobulins (IG) provide ______ immunity.",
-        options: ["a) Long-term", "b) Short-term", "c) No immunity", "d) Lifelong"],
-        answer: "b) Short-term",
-        section: "Pathology"
-    },
-    {
-        question: "12. Lack of oxygen to cells is called ______.",
-        options: ["a) Necrosis", "b) Hypoxia", "c) Apoptosis", "d) Infection"],
-        answer: "b) Hypoxia",
-        section: "Pathology"
-    },
-    {
-        question: "13. Apoptosis is ______.",
-        options: ["a) Normal programmed cell death", "b) Sudden cancer growth", "c) Bacterial death", "d) Reversible injury"],
-        answer: "a) Normal programmed cell death",
-        section: "Pathology"
-    },
-    {
-        question: "14. Necrosis is ______.",
-        options: ["a) Natural cell death", "b) Abnormal, harmful cell death", "c) Caused only by age", "d) Always reversible"],
-        answer: "b) Abnormal, harmful cell death",
-        section: "Pathology"
-    },
-    {
-        question: "15. Benign tumor is ______.",
-        options: ["a) Fast growing", "b) Spreads quickly", "c) Slow growing and localized", "d) Always fatal"],
-        answer: "c) Slow growing and localized",
-        section: "Pathology"
-    },
-    {
-        question: "16. Malignant tumor is ______.",
-        options: ["a) Slow", "b) Safe", "c) Cancerous", "d) Not harmful"],
-        answer: "c) Cancerous",
-        section: "Pathology"
-    },
-    {
-        question: "17. Spread of cancer to distant organs is known as ______.",
-        options: ["a) Mutation", "b) Metastasis", "c) Abrasion", "d) Erosion"],
-        answer: "b) Metastasis",
-        section: "Pathology"
-    },
-    {
-        question: "18. The study of diseases is called ______.",
-        options: ["a) Pedagogy", "b) Pathology", "c) Physiology", "d) Radiology"],
-        answer: "b) Pathology",
-        section: "Pathology"
-    },
-    {
-        question: "19. The MOST common cause of cell injury is ______.",
-        options: ["a) Radiation", "b) Hypoxia", "c) Trauma", "d) Chemicals"],
-        answer: "b) Hypoxia",
-        section: "Pathology"
-    },
-    {
-        question: "20. Which cell death causes inflammation?",
-        options: ["a) Apoptosis", "b) Necrosis", "c) Natural aging", "d) None"],
-        answer: "b) Necrosis",
-        section: "Pathology"
-    },
-    {
-        question: "21. Heat, redness and swelling are caused due to ______.",
-        options: ["a) Decreased blood flow", "b) Increased blood flow", "c) Increased hormones", "d) Lack of blood"],
-        answer: "b) Increased blood flow",
-        section: "Pathology"
-    },
-    {
-        question: "22. Fever is mainly caused by ______.",
-        options: ["a) Pyrogens", "b) Hormones", "c) Electrolytes", "d) Pain"],
-        answer: "a) Pyrogens",
-        section: "Pathology"
-    },
-    {
-        question: "23. Allergic reaction is related to ______.",
-        options: ["a) WBC – Neutrophils", "b) WBC – Eosinophils", "c) WBC – Basophils", "d) RBC"],
-        answer: "c) WBC – Basophils",
-        section: "Pathology"
-    },
-    {
-        question: "24. Which cell fights bacterial infection?",
-        options: ["a) Neutrophils", "b) Eosinophils", "c) Lymphocytes", "d) RBC"],
-        answer: "a) Neutrophils",
-        section: "Pathology"
-    },
-    {
-        question: "25. Cancer of epithelial tissue is called ______.",
-        options: ["a) Sarcoma", "b) Carcinoma", "c) Lymphoma", "d) Melanoma"],
-        answer: "b) Carcinoma",
-        section: "Pathology"
+        question: "10. Fast breathing in children suggests ______.",
+        options: ["a) Pneumonia", "b) Fever", "c) Worms", "d) Anemia"],
+        answer: "a) Pneumonia",
+        section: "Child Health Nursing"
     },
     
-    // PHARMACOLOGY MCQs (26-50)
+    // GROWTH & DEVELOPMENT (11–30)
     {
-        question: "26. Pharmacology means study of ______.",
-        options: ["a) Body functions", "b) Disease", "c) Medicines", "d) Surgery"],
-        answer: "c) Medicines",
-        section: "Pharmacology"
+        question: "11. Growth means ______.",
+        options: ["a) Increase in knowledge", "b) Increase in size", "c) Skill development", "d) Social behavior"],
+        answer: "b) Increase in size",
+        section: "Growth & Development"
     },
     {
-        question: "27. Generic name means ______.",
-        options: ["a) Scientific name of drug", "b) Company name", "c) Nickname", "d) Chemical formula only"],
-        answer: "a) Scientific name of drug",
-        section: "Pharmacology"
+        question: "12. Development means ______.",
+        options: ["a) Getting taller", "b) Getting heavier", "c) Improvement in skills", "d) New clothes"],
+        answer: "c) Improvement in skills",
+        section: "Growth & Development"
     },
     {
-        question: "28. Which is a brand name of Paracetamol?",
-        options: ["a) Amlodipine", "b) Crocin", "c) Ciprofloxacin", "d) Cetirizine"],
-        answer: "b) Crocin",
-        section: "Pharmacology"
+        question: "13. Milestones are ______.",
+        options: ["a) Games", "b) Toys", "c) Normal achievements by age", "d) Medicines"],
+        answer: "c) Normal achievements by age",
+        section: "Growth & Development"
     },
     {
-        question: "29. Giving a drug by mouth is ______ route.",
-        options: ["a) IM", "b) Oral", "c) IV", "d) SC"],
-        answer: "b) Oral",
-        section: "Pharmacology"
+        question: "14. Head control is achieved by ______.",
+        options: ["a) 1 month", "b) 3 months", "c) 6 months", "d) 9 months"],
+        answer: "b) 3 months",
+        section: "Growth & Development"
     },
     {
-        question: "30. Fastest route of drug administration is ______.",
-        options: ["a) Oral", "b) IM", "c) IV", "d) Inhalation"],
-        answer: "c) IV",
-        section: "Pharmacology"
+        question: "15. Baby rolls over at ______.",
+        options: ["a) 2 months", "b) 4 months", "c) 5 months", "d) 9 months"],
+        answer: "c) 5 months",
+        section: "Growth & Development"
     },
     {
-        question: "31. Antibiotics are used to treat ______.",
-        options: ["a) Viral infection", "b) Bacterial infection", "c) Fungal infection", "d) Allergies"],
-        answer: "b) Bacterial infection",
-        section: "Pharmacology"
+        question: "16. Baby sits with support at ______.",
+        options: ["a) 3 months", "b) 6 months", "c) 10 months", "d) 1 year"],
+        answer: "b) 6 months",
+        section: "Growth & Development"
     },
     {
-        question: "32. Example of analgesic is ______.",
-        options: ["a) Amlodipine", "b) Paracetamol", "c) Ciprofloxacin", "d) Insulin"],
-        answer: "b) Paracetamol",
-        section: "Pharmacology"
+        question: "17. Baby sits without support at ______.",
+        options: ["a) 6 months", "b) 8 months", "c) 10 months", "d) 12 months"],
+        answer: "b) 8 months",
+        section: "Growth & Development"
     },
     {
-        question: "33. Antipyretics reduce ______.",
-        options: ["a) Pain", "b) Fever", "c) Inflammation", "d) BP"],
-        answer: "b) Fever",
-        section: "Pharmacology"
+        question: "18. Standing with support starts at ______.",
+        options: ["a) 6 months", "b) 8 months", "c) 9 months", "d) 12 months"],
+        answer: "c) 9 months",
+        section: "Growth & Development"
     },
     {
-        question: "34. Cetirizine is used for ______.",
-        options: ["a) BP", "b) Allergy", "c) Infection", "d) Fever"],
-        answer: "b) Allergy",
-        section: "Pharmacology"
+        question: "19. Baby walks with support at ______.",
+        options: ["a) 6 months", "b) 9 months", "c) 12 months", "d) 18 months"],
+        answer: "c) 12 months",
+        section: "Growth & Development"
     },
     {
-        question: "35. Insulin is used in ______.",
-        options: ["a) Hypertension", "b) Diabetes", "c) Asthma", "d) Tuberculosis"],
-        answer: "b) Diabetes",
-        section: "Pharmacology"
+        question: "20. Baby walks alone at ______.",
+        options: ["a) 10 months", "b) 12–15 months", "c) 18 months", "d) 24 months"],
+        answer: "b) 12–15 months",
+        section: "Growth & Development"
     },
     {
-        question: "36. Metformin is used to lower ______.",
-        options: ["a) Cholesterol", "b) Blood sugar", "c) Fever", "d) Pain"],
-        answer: "b) Blood sugar",
-        section: "Pharmacology"
+        question: "21. Pincer grasp begins at ______.",
+        options: ["a) 6 months", "b) 9 months", "c) 12 months", "d) 18 months"],
+        answer: "b) 9 months",
+        section: "Growth & Development"
     },
     {
-        question: "37. Amlodipine is a ______.",
-        options: ["a) Antidiabetic", "b) Antibiotic", "c) Antihypertensive", "d) Analgesic"],
-        answer: "c) Antihypertensive",
-        section: "Pharmacology"
+        question: "22. Mature pincer grasp at ______.",
+        options: ["a) 6 months", "b) 9 months", "c) 12 months", "d) 15 months"],
+        answer: "c) 12 months",
+        section: "Growth & Development"
     },
     {
-        question: "38. Adverse drug reaction means ______.",
-        options: ["a) Expected effect", "b) Mild effect", "c) Harmful/unwanted effect", "d) No effect"],
-        answer: "c) Harmful/unwanted effect",
-        section: "Pharmacology"
+        question: "23. Social smile appears at ______.",
+        options: ["a) Birth", "b) 2 months", "c) 4 months", "d) 6 months"],
+        answer: "b) 2 months",
+        section: "Growth & Development"
     },
     {
-        question: "39. Drugs should NOT be given if patient is ______.",
-        options: ["a) Hungry", "b) Allergic to the drug", "c) Sleeping", "d) Awake"],
-        answer: "b) Allergic to the drug",
-        section: "Pharmacology"
+        question: "24. Stranger anxiety begins at ______.",
+        options: ["a) 2 months", "b) 4 months", "c) 8–9 months", "d) 12 months"],
+        answer: "c) 8–9 months",
+        section: "Growth & Development"
     },
     {
-        question: "40. “Right dose” is part of ______.",
-        options: ["a) 3 rights", "b) 5 rights", "c) 6 rights", "d) 10 rights"],
-        answer: "d) 10 rights",
-        section: "Pharmacology"
+        question: "25. Child says 1–2 words at ______.",
+        options: ["a) 6 months", "b) 9 months", "c) 12 months", "d) 2 years"],
+        answer: "c) 12 months",
+        section: "Growth & Development"
     },
     {
-        question: "41. Right time means ______.",
-        options: ["a) Anytime", "b) As written in order", "c) Morning only", "d) Evening only"],
-        answer: "b) As written in order",
-        section: "Pharmacology"
+        question: "26. 2-word sentences at ______.",
+        options: ["a) 6 months", "b) 1 year", "c) 2 years", "d) 3 years"],
+        answer: "c) 2 years",
+        section: "Growth & Development"
     },
     {
-        question: "42. If a patient shows rash after drug, nurse should ______.",
-        options: ["a) Continue drug", "b) Stop drug & inform doctor", "c) Ignore", "d) Double the dose"],
-        answer: "b) Stop drug & inform doctor",
-        section: "Pharmacology"
+        question: "27. Not sitting at 9 months is a ______.",
+        options: ["a) Normal finding", "b) Red flag", "c) Good sign", "d) Milestone"],
+        answer: "b) Red flag",
+        section: "Growth & Development"
     },
     {
-        question: "43. Antibiotics should be taken ______.",
-        options: ["a) Until symptoms stop", "b) Full course completed", "c) Only 2 days", "d) With juice only"],
-        answer: "b) Full course completed",
-        section: "Pharmacology"
+        question: "28. Not walking by 18 months suggests ______.",
+        options: ["a) Normal", "b) Red flag", "c) Tall child", "d) Genetic growth"],
+        answer: "b) Red flag",
+        section: "Growth & Development"
     },
     {
-        question: "44. NSAIDs commonly cause ______.",
-        options: ["a) Constipation", "b) Stomach irritation", "c) Fever", "d) Hypoglycemia"],
-        answer: "b) Stomach irritation",
-        section: "Pharmacology"
+        question: "29. Not speaking even single word by 2 years suggests ______.",
+        options: ["a) Normal", "b) Autism", "c) Speech delay", "d) Overweight"],
+        answer: "c) Speech delay",
+        section: "Growth & Development"
     },
     {
-        question: "45. Oral drugs are absorbed mainly in ______.",
-        options: ["a) Stomach", "b) Small intestine", "c) Liver", "d) Mouth"],
-        answer: "b) Small intestine",
-        section: "Pharmacology"
+        question: "30. Weight of child doubles by ______.",
+        options: ["a) 3 months", "b) 5 months", "c) 1 year", "d) 2 years"],
+        answer: "b) 5 months",
+        section: "Growth & Development"
+    },
+
+    // IMMUNIZATION (31–50)
+    {
+        question: "31. Which vaccine is given at birth?",
+        options: ["a) MR", "b) BCG", "c) JE", "d) DPT"],
+        answer: "b) BCG",
+        section: "Immunization"
     },
     {
-        question: "46. IV route means drug goes into ______.",
-        options: ["a) Muscle", "b) Vein", "c) Skin", "d) Bone"],
-        answer: "b) Vein",
-        section: "Pharmacology"
+        question: "32. BCG is given ______.",
+        options: ["a) SC", "b) IM", "c) ID", "d) Oral"],
+        answer: "c) ID",
+        section: "Immunization"
     },
     {
-        question: "47. IM injections are usually given in ______.",
-        options: ["a) Deltoid", "b) Umbilicus", "c) Wrist", "d) Knee"],
-        answer: "a) Deltoid",
-        section: "Pharmacology"
+        question: "33. OPV is given ______.",
+        options: ["a) Oral", "b) Intradermal", "c) IM", "d) Subcutaneous"],
+        answer: "a) Oral",
+        section: "Immunization"
     },
     {
-        question: "48. Topical drugs are applied on ______.",
-        options: ["a) Skin", "b) Muscle", "c) Bone", "d) Heart"],
-        answer: "a) Skin",
-        section: "Pharmacology"
+        question: "34. OPV can be ______.",
+        options: ["a) Frozen", "b) Not frozen", "c) Heated", "d) Kept at room temp"],
+        answer: "a) Frozen",
+        section: "Immunization"
     },
     {
-        question: "49. Severe allergic reaction after drug is known as ______.",
-        options: ["a) Rash", "b) Itching", "c) Anaphylaxis", "d) Fever"],
-        answer: "c) Anaphylaxis",
-        section: "Pharmacology"
+        question: "35. DPT should ______.",
+        options: ["a) Never be frozen", "b) Always be frozen", "c) Kept at 15°C", "d) Kept at room temp"],
+        answer: "a) Never be frozen",
+        section: "Immunization"
     },
     {
-        question: "50. Before giving any medication, the nurse must FIRST check ______.",
-        options: ["a) Patient’s religion", "b) Patient’s allergy status", "c) Patient’s job", "d) Patient’s breakfast"],
-        answer: "b) Patient’s allergy status",
-        section: "Pharmacology"
+        question: "36. Pentavalent vaccine contains all EXCEPT:",
+        options: ["a) Hep B", "b) Hib", "c) Polio", "d) DPT"],
+        answer: "c) Polio", // Pentavalent contains DPT, Hep B, Hib. OPV is given separately.
+        section: "Immunization"
+    },
+    {
+        question: "37. First dose of pentavalent vaccine at ______.",
+        options: ["a) At birth", "b) 6 weeks", "c) 6 months", "d) 9 months"],
+        answer: "b) 6 weeks",
+        section: "Immunization"
+    },
+    {
+        question: "38. MR vaccine is a ______.",
+        options: ["a) Killed vaccine", "b) Live vaccine", "c) Toxoid", "d) DNA vaccine"],
+        answer: "b) Live vaccine",
+        section: "Immunization"
+    },
+    {
+        question: "39. Vaccine storing temperature is ______.",
+        options: ["a) –10°C", "b) +2 to +8°C", "c) 15–20°C", "d) 30°C"],
+        answer: "b) +2 to +8°C",
+        section: "Immunization"
+    },
+    {
+        question: "40. Vaccine given intradermally is ______.",
+        options: ["a) DPT", "b) OPV", "c) BCG", "d) Pentavalent"],
+        answer: "c) BCG",
+        section: "Immunization"
+    },
+    {
+        question: "41. Vaccine causing scar on arm is ______.",
+        options: ["a) OPV", "b) BCG", "c) PCV", "d) MMR"],
+        answer: "b) BCG",
+        section: "Immunization"
+    },
+    {
+        question: "42. Measles vaccine is stored in ______.",
+        options: ["a) Freezer", "b) Ice-lined refrigerator", "c) Room temperature", "d) Sunlight"],
+        answer: "b) Ice-lined refrigerator",
+        section: "Immunization"
+    },
+    {
+        question: "43. JE vaccine is given at ______.",
+        options: ["a) 6 weeks", "b) 9–12 months", "c) 2 years", "d) At birth"],
+        answer: "b) 9–12 months",
+        section: "Immunization"
+    },
+    {
+        question: "44. Rotavirus vaccine route is ______.",
+        options: ["a) IM", "b) IV", "c) Oral", "d) SC"],
+        answer: "c) Oral",
+        section: "Immunization"
+    },
+    {
+        question: "45. Booster dose of DPT is given at ______.",
+        options: ["a) 9 months", "b) 16–24 months", "c) 5 years", "d) 10 years"],
+        answer: "b) 16–24 months",
+        section: "Immunization"
+    },
+    {
+        question: "46. Best protection for measles is ______.",
+        options: ["a) Antibiotics", "b) Vitamin A", "c) MR vaccine", "d) ORS"],
+        answer: "c) MR vaccine",
+        section: "Immunization"
+    },
+    {
+        question: "47. Cold chain failure first affects ______.",
+        options: ["a) DPT", "b) OPV", "c) MR", "d) BCG"],
+        answer: "a) DPT", // DPT is most sensitive to freezing (which is a common cold chain failure). OPV is most sensitive to heat.
+        section: "Immunization"
+    },
+    {
+        question: "48. Vaccine vial monitor (VVM) is used for ______.",
+        options: ["a) Checking expiry date", "b) Checking vaccine temperature exposure", "c) Checking dose", "d) Checking color"],
+        answer: "b) Checking vaccine temperature exposure",
+        section: "Immunization"
+    },
+    {
+        question: "49. Wasting vaccine is ______.",
+        options: ["a) Safe", "b) Spoiled vaccine", "c) Extra vaccine", "d) No vaccine"],
+        answer: "b) Spoiled vaccine",
+        section: "Immunization"
+    },
+    {
+        question: "50. 0.1 ml BCG is given in ______.",
+        options: ["a) Left upper arm", "b) Right thigh", "c) Buttock", "d) Deltoid IM"],
+        answer: "a) Left upper arm",
+        section: "Immunization"
     },
 ];
 
-// --- Quiz Logic ---
+// --- Quiz Logic (UPDATED for Instant Feedback) ---
 let userAnswers = {}; // Stores user's selected option for each question
 const quizContainer = document.getElementById('quiz-container');
 const submitBtn = document.getElementById('submit-btn');
 const retryBtn = document.getElementById('retry-btn');
 const resultContainer = document.getElementById('result-container');
 const scoreDisplay = document.getElementById('score');
+const nextBtn = document.getElementById('next-btn'); // Unused in this layout but kept from HTML
+const prevBtn = document.getElementById('prev-btn'); // Unused in this layout but kept from HTML
 
-// Function to handle option clicks (UPDATED FOR INSTANT FEEDBACK)
+// Function to handle option clicks (Instant Feedback implementation)
 function handleOptionClick(event) {
     const selectedItem = event.target;
     const qIndex = parseInt(selectedItem.dataset.questionIndex);
@@ -330,11 +334,12 @@ function handleOptionClick(event) {
         li.classList.remove('selected'); 
     });
 
-    // 3. Mark the selected item
+    // 3. Mark the selected item and store the answer
     userAnswers[qIndex] = selectedOption;
 
     // 4. Check for correctness and apply styling
     const correctAnswer = currentQuestion.answer;
+    let isCorrect = (selectedOption === correctAnswer);
     
     // Highlight the correct answer (green)
     optionsList.querySelectorAll('li').forEach(li => {
@@ -344,7 +349,7 @@ function handleOptionClick(event) {
     });
 
     // Highlight the user's selected answer (red if incorrect)
-    if (selectedOption !== correctAnswer) {
+    if (!isCorrect) {
         selectedItem.classList.add('incorrect');
     }
 
@@ -357,11 +362,12 @@ function handleOptionClick(event) {
         feedbackElement.style.padding = '8px';
         feedbackElement.style.borderRadius = '4px';
         feedbackElement.style.fontWeight = 'bold';
+        feedbackElement.style.fontSize = '0.9em';
         qCard.appendChild(feedbackElement);
     }
     
-    if (selectedOption === correctAnswer) {
-        feedbackElement.textContent = "✅ Correct!";
+    if (isCorrect) {
+        feedbackElement.textContent = "✅ Correct! Great job.";
         feedbackElement.style.backgroundColor = '#d4edda'; // Light green
         feedbackElement.style.color = '#155724'; // Dark green text
     } else {
@@ -382,7 +388,7 @@ function renderQuestions() {
             currentSection = q.section;
             const sectionHeader = document.createElement('h2');
             sectionHeader.textContent = `📝 ${currentSection.toUpperCase()} MCQs`;
-            sectionHeader.style.color = currentSection === 'Pathology' ? '#007bff' : '#dc3545';
+            sectionHeader.style.color = '#007bff'; 
             sectionHeader.style.marginTop = '20px';
             sectionHeader.style.borderBottom = '2px solid #ccc';
             quizContainer.appendChild(sectionHeader);
@@ -399,7 +405,6 @@ function renderQuestions() {
         const optionsList = document.createElement('ul');
         optionsList.className = 'options-list';
 
-        // Check if question has already been answered (e.g., after a reset or previous attempt)
         const isAnswered = userAnswers.hasOwnProperty(index);
 
         q.options.forEach(option => {
@@ -407,11 +412,11 @@ function renderQuestions() {
             listItem.textContent = option;
             listItem.dataset.questionIndex = index;
             
-            // Re-apply styles if already answered, but disable clicks
             if (isAnswered) {
+                // If already answered, apply permanent feedback styles
                 if (option === q.answer) {
                     listItem.classList.add('correct');
-                } else if (option === userAnswers[index] && option !== q.answer) {
+                } else if (option === userAnswers[index]) {
                     listItem.classList.add('incorrect');
                 }
             } else {
@@ -428,6 +433,7 @@ function renderQuestions() {
         if (isAnswered) {
             const selectedOption = userAnswers[index];
             const correctAnswer = q.answer;
+            const isCorrect = (selectedOption === correctAnswer);
 
             let feedbackElement = document.createElement('div');
             feedbackElement.className = 'feedback-message';
@@ -435,9 +441,10 @@ function renderQuestions() {
             feedbackElement.style.padding = '8px';
             feedbackElement.style.borderRadius = '4px';
             feedbackElement.style.fontWeight = 'bold';
+            feedbackElement.style.fontSize = '0.9em';
 
-            if (selectedOption === correctAnswer) {
-                feedbackElement.textContent = "✅ Correct!";
+            if (isCorrect) {
+                feedbackElement.textContent = "✅ Correct! Great job.";
                 feedbackElement.style.backgroundColor = '#d4edda';
                 feedbackElement.style.color = '#155724';
             } else {
@@ -464,7 +471,7 @@ function submitQuiz() {
 
     // Display results
     quizContainer.style.display = 'none';
-    document.getElementById('controls').style.display = 'none'; // Hide controls 
+    document.getElementById('controls').style.display = 'none'; 
     resultContainer.style.display = 'block';
     scoreDisplay.textContent = `You scored ${score} out of ${quizQuestions.length} (${((score / quizQuestions.length) * 100).toFixed(2)}%)!`;
 }
@@ -472,10 +479,10 @@ function submitQuiz() {
 // Function to reset the quiz
 function resetQuiz() {
     userAnswers = {}; // Reset answers
-    quizContainer.style.display = 'block'; // Show quiz
-    document.getElementById('controls').style.display = 'block'; // Show controls 
-    resultContainer.style.display = 'none'; // Hide results
-    renderQuestions(); // Re-render questions with click handlers and no selections
+    quizContainer.style.display = 'block'; 
+    document.getElementById('controls').style.display = 'block'; 
+    resultContainer.style.display = 'none'; 
+    renderQuestions(); // Re-render questions
 }
 
 // Event Listeners
