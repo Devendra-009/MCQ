@@ -1,3 +1,41 @@
+/* Additions for Topic Selection */
+#topic-selection {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.topic-btn {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.topic-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#quiz-title {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #28a745;
+}
+
+/* Existing styles for Quiz Area (Ensure these are present) */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -51,11 +89,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.options-list li:hover {
-    background-color: #f0f0f0;
-}
-
-/* Styles for correct/incorrect answers */
+/* Styles for correct/incorrect answers and feedback */
 .correct {
     background-color: #d4edda !important;
     border-color: #c3e6cb !important;
@@ -66,9 +100,12 @@ h1 {
     border-color: #f5c6cb !important;
 }
 
-.selected {
-    background-color: #b8daff;
-    border-color: #80bdff;
+.feedback-message {
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 #controls {
